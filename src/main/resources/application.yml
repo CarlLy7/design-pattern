@@ -1,0 +1,18 @@
+spring:
+  application:
+  name: design-pattern
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://127.0.0.1:3306/design_pattern?serverTimezone=UTC&characterEncoding=utf8&useSSL=false
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+server:
+  port: 8080
+
+deepseek:
+  api-key: sk-e79665c0449d4224bacb469741c97645
