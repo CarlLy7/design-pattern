@@ -12,6 +12,7 @@ import java.util.concurrent.atomic.AtomicLong;
 public class IdGenerator {
     private AtomicLong id = new AtomicLong(0);
 
+    //静态内部类
     private static class SingletonHodler {
         private static final IdGenerator instance = new IdGenerator();
     }
