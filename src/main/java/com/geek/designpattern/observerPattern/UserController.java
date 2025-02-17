@@ -1,6 +1,6 @@
 package com.geek.designpattern.observerPattern;
 
-import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
@@ -11,9 +11,10 @@ import java.util.List;
  * @date: 2025.02.13
  */
 @RestController
-@AllArgsConstructor
 public class UserController {
-    private final UserService userService;
+
+    @Autowired
+    private UserService userService;
     private List<RegObserver> observers = new ArrayList<>();
 
     // 在被观察者中注册所有的观察者
