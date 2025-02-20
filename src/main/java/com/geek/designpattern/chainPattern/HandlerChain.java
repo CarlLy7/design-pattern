@@ -1,4 +1,4 @@
-package com.geek.designpattern.ChainPattern;
+package com.geek.designpattern.chainPattern;
 
 /**
  * 职责链模式中的职责链

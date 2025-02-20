@@ -1,4 +1,4 @@
-package com.geek.designpattern.ChainPattern;
+package com.geek.designpattern.chainPattern;
 
 /**
  * 职责链中处理器的抽象父类
