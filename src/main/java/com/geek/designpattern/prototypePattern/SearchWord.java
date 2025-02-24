@@ -1,4 +1,4 @@
-package com.geek.designpattern.prototype;
+package com.geek.designpattern.prototypePattern;
 
 /**
  * @author: carl

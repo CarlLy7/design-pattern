@@ -1,4 +1,4 @@
-package com.geek.designpattern.singleton;
+package com.geek.designpattern.singletonPattern;
 
 import java.util.concurrent.atomic.AtomicLong;
 
