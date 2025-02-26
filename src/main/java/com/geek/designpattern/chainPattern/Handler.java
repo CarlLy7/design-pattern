@@ -17,10 +17,9 @@ public abstract class Handler {
     // 使用final修饰，防止被子类重写
     // 一个请求会被链路中的所有处理器进行处理
     public final void handle() {
-        doHandle();
-        while (successor != null) {
-            successor.doHandle();
-            successor = successor.successor;
+        boolean isHandle=doHandle();
+        while (successor != null  && isHandle) {
+            this.successor.handle();
         }
     }
 
